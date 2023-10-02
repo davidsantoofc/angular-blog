@@ -1,7 +1,7 @@
 <div class="container__big-card">
   <div class="big-card__photo">
     <img class=""
-      src="https://services.meteored.com/img/article/por-que-la-luna-se-aleja-de-la-tierra-1665842779962_768.jpeg"
+      src="{{ photoCover }}"
       alt="Imagem do Big-Card"
       height="240"
       srcset=""
@@ -9,13 +9,11 @@
   </div>
 
   <div class="big-card__title">
-    <h1><a href="#">Planeta terra e a Lua</a></h1>
+    <h1><a [routerLink]="['content', id]"> {{ cardTitle }}</a></h1>
   </div>
 
   <div class="big-card__description">
-    <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Vel unde, libero autem vero natus doloribus eveniet soluta asperiores
-      repellendus optio et minima numquam nesciunt accusantium nam laborum non dolor perferendis?
+    <p><a [routerLink]="['content', id]">{{ cardDescription }}
       </a>
     </p>
   </div>
